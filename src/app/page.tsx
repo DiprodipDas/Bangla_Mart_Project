@@ -1,3 +1,4 @@
+import ProductCard from "@/components/Card/ProductCard";
 import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -8,7 +9,9 @@ export default function Home() {
     <main >
       <Navbar />
         <Carousel/>
+        <ProductCard/>
         <Footer/>
+       
     </main>
   );
 }
