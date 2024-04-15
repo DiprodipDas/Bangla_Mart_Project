@@ -1,8 +1,7 @@
 import React from 'react'
-
 function Navbar() {
   return (
-    <div>
+    <div className='bijon'>
 
 <div className="navbar bg-base-100">
   <div className="flex-1">

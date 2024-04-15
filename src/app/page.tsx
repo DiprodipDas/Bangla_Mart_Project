@@ -3,6 +3,7 @@ import Carousel from "@/components/Carousel";
 import Difftext from "@/components/Difftext";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import NewProducts from "@/components/Products/NewProducts";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
     <main >
       <Navbar />
         <Carousel/>
-        <ProductCard/>
+        <NewProducts></NewProducts>
         <Difftext/>
         <Footer/>
        
