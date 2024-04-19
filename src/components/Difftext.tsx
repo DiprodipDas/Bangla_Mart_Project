@@ -2,10 +2,10 @@ import React from 'react'
 
 function Difftext() {
   return (
-    <div style={{
+    <div className='hidden lg:block' style={{
         marginBottom:'15px'
     }}>
-<div className="diff aspect-[6/4]">
+<div className="diff aspect-[5/1]">
   <div className="diff-item-1">
     <div className="bg-primary text-primary-content text-9xl font-black grid place-content-center">BanglaMart</div>
   </div>
