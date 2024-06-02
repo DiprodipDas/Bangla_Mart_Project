@@ -1,17 +1,31 @@
 import React from 'react'
-
 function Navbar() {
   return (
-    <div>
+    <div className='bijon'>
 
 <div className="navbar bg-base-100">
   <div className="flex-1">
     <a className="btn btn-ghost text-xl">BanglaMart</a>
   </div>
   <div className="flex-none gap-2">
-    <div className="form-control">
-      <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+  <div className="join">
+  <div>
+    <div>
+      <input className="input input-bordered join-item" placeholder="Search"/>
     </div>
+  </div>
+  <select className="select select-bordered join-item">
+    <option disabled selected>Filter</option>
+    <option>Sci-fi</option>
+    <option>Drama</option>
+    <option>Action</option>
+  </select>
+  <div className="indicator">
+    <span className="indicator-item badge badge-secondary">new</span> 
+    <button className="btn join-item">Search</button>
+  </div>
+  
+</div>
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">

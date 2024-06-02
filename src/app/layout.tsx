@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
+import { Providers } from "@/lib/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <Providers>
+ <html lang="en">
       <body className={inter.className}>
         {children}</body>
     </html>
+    </Providers>
+   
   );
 }
