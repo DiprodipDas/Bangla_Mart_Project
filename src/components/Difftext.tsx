@@ -1,6 +1,9 @@
 import React from 'react'
 
 function Difftext() {
+  // const dispatch = useAppDispatch();
+  // const count = useAppSelector((state) => state.counterSlice.value);
+
   return (
     <div className='hidden lg:block' style={{
         marginBottom:'15px'
@@ -12,9 +15,18 @@ function Difftext() {
   <div className="diff-item-2">
     <div className="bg-base-200 text-9xl font-black grid place-content-center">BanglaMart</div>
   </div>
+
   <div className="diff-resizer"></div>
 </div>
-
+   {/* <div>
+        <button onClick={() => dispatch(increment())}>
+          Increment
+        </button>
+        {count}
+        <button>
+          Decrement
+        </button>
+      </div> */}
     </div>
   )
 }

@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import ProductCard from '../Card/ProductCard';
 
@@ -77,6 +78,8 @@ const ProductsData=[
 ];
 
 const NewProducts = () => {
+
+    // const { data,isSuccess,isError,isLoading} = useGetUserQuery(undefined)
   return (
     <div>
         <div className="container pt-16">

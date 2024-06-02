@@ -1,22 +1,20 @@
+import React from 'react';
 import ProductCard from "@/components/Card/ProductCard";
 import Carousel from "@/components/Carousel";
 import CategoryNav from "@/components/CategoryNav";
 import Difftext from "@/components/Difftext";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import NewProducts from "@/components/Products/NewProducts";
-import Image from "next/image";
+import RootLayout from './layout';
 
-export default function Home() {
+const Page = () => {
   return (
-    <main >
-      <Navbar />
+    <main>
       <CategoryNav />
-        <Carousel/>
-        <NewProducts></NewProducts>
-        <Difftext/>
-        <Footer/>
-       
+      <Carousel />
+      <NewProducts />
+      <Difftext />
     </main>
   );
-}
+};
+
+export default Page;
