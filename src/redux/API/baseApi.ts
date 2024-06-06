@@ -19,6 +19,11 @@ export const baseApi = createApi({
         data: data,
       }),
     }),
+    createProduct:builder.mutation({
+      query:({data})=>({
+        url:"/create-product"
+      })
+    })
   }),
 });
 
